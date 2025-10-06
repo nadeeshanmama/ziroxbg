@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZiroX BG Remover | AI Background Removal</title>
+    <title>BG Remover Pro | AI Background Removal</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
@@ -740,7 +740,7 @@
                 <span>ZiroX BG Remover</span>
             </div>
             <nav>
-                <ul>
+                <center><ul>
                     <li><a href="#" class="active">Home</a></li>
                     <li><a href="#" id="dashboardLink">Dashboard</a></li>
                     <li><a href="#">Pricing</a></li>
@@ -754,8 +754,8 @@
             <div class="hero-bg"></div>
             <h1>Remove Image Backgrounds Instantly</h1>
             <p>Powered by advanced AI technology. Get professional results with just one click. No skills required. Process unlimited images with our premium plans.</p>
-            <center><button class="btn btn-primary btn-large">
-                <i class="https://media.discordapp.net/attachments/1419292365100941332/1424782314335899788/background-removed_4.png?ex=68e5336e&is=68e3e1ee&hm=99cf3d93b0b5071b798cf945c26e9f831669dffd75052cbc6c3943c924e495b3&=&format=webp&quality=lossless"></i> Get Started Free
+            <button class="btn btn-primary btn-large">
+               <center> <i class="fas fa-rocket"></i> Get Started Free
             </button>
         </section>
 
@@ -797,7 +797,7 @@
             
             <div class="api-status" id="apiStatus" style="display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 30px;">
                 <div class="status-dot" style="width: 12px; height: 12px; border-radius: 50%; background: var(--success);"></div>
-                <span>Connected to Popa Technology</span>
+                <span>Connected to POPA API</span>
             </div>
         </section>
 
@@ -879,8 +879,8 @@
                 <a href="#"><i class="fab fa-linkedin"></i></a>
                 <a href="#"><i class="fab fa-github"></i></a>
             </div>
-            <p>&copy; 2025 ZiroX BG Remover. All rights reserved.</p>
-            <p>Powered by popa technology API</p>
+            <p>&copy; 2025 BG Remover Pro. All rights reserved.</p>
+            <p>Powered by POPA API</p>
         </footer>
     </div>
 
@@ -889,13 +889,12 @@
     <script>
         // Firebase configuration
         const firebaseConfig = {
-               apiKey: "AIzaSyCPe3Z4nx18OcniRmPvRyxjgzhPJOgzP78",
-               authDomain: "ziroxtools.firebaseapp.com",
-               projectId: "ziroxtools",
-               storageBucket: "ziroxtools.firebasestorage.app",
-               messagingSenderId: "956282618471",
-               appId: "1:956282618471:web:f72ae9a436e5dab5e30ac2",
-               measurementId: "G-582N4RZ1F2"
+            apiKey: "AIzaSyC4RXFq3p6e5m5Y5qY5Y5Y5Y5Y5Y5Y5Y5Y5Y5",
+            authDomain: "bg-remover-pro.firebaseapp.com",
+            projectId: "bg-remover-pro",
+            storageBucket: "bg-remover-pro.appspot.com",
+            messagingSenderId: "123456789012",
+            appId: "1:123456789012:web:5Y5Y5Y5Y5Y5Y5Y5Y5Y5Y5Y"
         };
 
         // Initialize Firebase
@@ -920,9 +919,9 @@
         const processedCount = document.getElementById('processedCount');
         const userCount = document.getElementById('userCount');
 
-        // popa technology API configuration
+        // Remove.bg API configuration
         const API_KEY = '6WuoZog5jCLuM4RLav178cNh';
-        const API_URL = 'https://api.popa technology/v1.0/removebg';
+        const API_URL = 'https://api.remove.bg/v1.0/removebg';
 
         // Global variables
         let currentFile = null;
@@ -1062,7 +1061,7 @@
             reader.readAsDataURL(file);
         }
 
-        // Process image with popa technology API
+        // Process image with remove.bg API
         function processImage() {
             if (processBtn.disabled || !currentFile) return;
             
@@ -1075,7 +1074,7 @@
             formData.append('image_file', currentFile);
             formData.append('size', 'auto');
             
-            // Make API request to popa technology
+            // Make API request to remove.bg
             fetch(API_URL, {
                 method: 'POST',
                 headers: {
